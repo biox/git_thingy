@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-require 'mixlib/shellout'
-require 'awesome_print'
-require 'rubygems'
-require 'commander/import'
-require 'terminal-table'
-require 'pry'
+
+gem 'mixlib-shellout'
+gem 'awesome_print'
+gem 'commander'
+gem 'terminal-table'
+gem 'pry'
