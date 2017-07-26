@@ -20,7 +20,7 @@ command :basic do |c|
   c.description = 'Prints basic git branch layout'
   c.option '--sort commit', String, 'sort by commit (default alphabetical)'
   c.action do |args, options|
-    ap git_cmd('branch', "-a #{options.sort}").split("\n  ")
+    ap git_cmd('branch', "-a #{options.sort}").split("\n  ") if options.sort.nil?
   end
 end
 
